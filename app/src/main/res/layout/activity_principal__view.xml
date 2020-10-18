@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal_View">
+
+
+    <TextView
+        android:id="@+id/txtVTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="serif"
+        android:text="Bienvenido a Turisteando"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="239dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="42dp"
+        android:width="300sp"
+        android:height="50sp"
+        android:text="Ingresar"
+        android:textColor="#000000"
+        android:textColorHighlight="#FFC107"
+        android:textColorHint="#2196F3"
+        android:textColorLink="#3F51B5"
+        android:textSize="25sp"
+        app:cornerRadius="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVTitulo"
+        app:rippleColor="#03A9F4"
+        app:strokeColor="#FFFFFF"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300sp"
+        android:height="50sp"
+        android:text="Registrarse"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:cornerRadius="50sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="501dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
