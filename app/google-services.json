@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "915013852999",
+    "firebase_url": "https://turisteandoapp.firebaseio.com",
+    "project_id": "turisteandoapp",
+    "storage_bucket": "turisteandoapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915013852999:android:413298607ba6e08759b662",
+        "android_client_info": {
+          "package_name": "com.example.turisteandoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "915013852999-p45dgtcep999qlv2pviabue6l5notof0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB25Ppa7pLQWMr2-Q938ypReWT7c4ifI3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "915013852999-p45dgtcep999qlv2pviabue6l5notof0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
