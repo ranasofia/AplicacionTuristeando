@@ -2,66 +2,202 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registry"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Register">
 
+
     <Button
         android:id="@+id/btnRegistry"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="251dp"
+        android:layout_height="51dp"
         android:layout_marginTop="626dp"
         android:layout_marginBottom="57dp"
+        android:width="300sp"
+        android:height="70sp"
+        android:fontFamily="@font/quicksand_bold"
         android:text="REGISTRARSE"
+        android:textSize="20sp"
+        app:cornerRadius="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="129dp" />
+        app:layout_constraintVertical_bias="0.687"
+        tools:layout_editor_absoluteX="92dp" />
+
 
     <EditText
-        android:id="@+id/completeName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="492dp"
+        android:id="@+id/firstName"
+        android:layout_width="365dp"
+        android:layout_height="39dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Nombre"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="100dp" />
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="42dp" />
 
     <EditText
-        android:id="@+id/correoR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="343dp"
-        android:layout_marginBottom="343dp"
+        android:id="@+id/lastName"
+        android:layout_width="359dp"
+        android:layout_height="39dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="100dp"
-        tools:text="Correo" />
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="223dp" />
 
     <EditText
-        android:id="@+id/passRe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/userName"
+        android:layout_width="359dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="172dp" />
+
+    <EditText
+        android:id="@+id/registryPass"
+        android:layout_width="343dp"
+        android:layout_height="33dp"
         android:layout_marginTop="505dp"
         android:layout_marginBottom="181dp"
         android:ems="10"
+        android:fontFamily="@font/quicksand_light"
         android:inputType="textPassword"
-        android:text="Constraseña"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="91dp" />
+        app:layout_constraintVertical_bias="0.689"
+        tools:layout_editor_absoluteX="21dp" />
+
+    <EditText
+        android:id="@+id/registryPassVal"
+        android:layout_width="343dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginBottom="181dp"
+        android:ems="10"
+        android:fontFamily="@font/quicksand_light"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112"
+        tools:layout_editor_absoluteX="22dp" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="357dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:fontFamily="@font/quicksand_light"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <EditText
+        android:id="@+id/emailR"
+        android:layout_width="358dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="281dp" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="172dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="16dp"
-        android:text="REGÍSTRATE"
+        android:id="@+id/nombre"
+        android:layout_width="288dp"
+        android:layout_height="38dp"
+        android:fontFamily="@font/quicksand_light"
+        android:text="Ingresa tu(s) nombre(s):"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <TextView
+        android:id="@+id/apellido"
+        android:layout_width="288dp"
+        android:layout_height="38dp"
+        android:fontFamily="@font/quicksand_light"
+        android:text="Ingresa tu(s) apellido(s):"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="81dp" />
+
+    <TextView
+        android:id="@+id/correo"
+        android:layout_width="288dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="156dp"
+        android:fontFamily="@font/quicksand_light"
+        android:text="Ingresa tu correo:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintHorizontal_bias="0.178"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/celular"
+        android:layout_width="288dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="232dp"
+        android:fontFamily="@font/quicksand_light"
+        android:text="Ingresa tu número de celular:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contraseña"
+        android:layout_width="342dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="380dp"
+        android:fontFamily="@font/quicksand_light"
+        android:text="Ingresa tu contraseña:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/valContra"
+        android:layout_width="342dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="456dp"
+        android:fontFamily="@font/quicksand_light"
+        android:text="Valida tu contraseña:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/usuario"
+        android:layout_width="342dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="308dp"
+        android:fontFamily="@font/quicksand_light"
+        android:text="Ingresa tu nombre de usuario:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

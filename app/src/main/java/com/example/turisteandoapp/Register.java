@@ -18,20 +18,30 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Register extends AppCompatActivity {
-    EditText nameU, nEmail, nPass;
+    EditText firstNameR, lastNameR, emailR, celR, userR , passR, valPassR;
     Button btnRegis;
-    TextView tittle;
+    TextView nameR, apellidoR, correoR, celularR, usuarioR, contraseñaR, valContraR;
     FirebaseAuth fAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        nameU = findViewById(R.id.completeName);
-        nEmail = findViewById(R.id.correoR);
-        nPass = findViewById(R.id.passRe);
+        firstNameR = findViewById(R.id.firstName);
+        lastNameR = findViewById(R.id.lastName);
+        emailR = findViewById(R.id.emailR);
+        celR = findViewById(R.id.editTextPhone);
+        userR = findViewById(R.id.userName);
+        passR = findViewById(R.id.registryPass);
+        valContraR = findViewById(R.id.registryPassVal);
         btnRegis = findViewById(R.id.btnRegistry);
-        tittle = findViewById(R.id.textView);
+        nameR = findViewById(R.id.nombre);
+        apellidoR = findViewById(R.id.apellido);
+        correoR = findViewById(R.id.correo);
+        celularR = findViewById(R.id.celular);
+        usuarioR = findViewById(R.id.usuario);
+        contraseñaR = findViewById(R.id.contraseña);
+        valContraR = findViewById(R.id.valContra);
         fAuth = FirebaseAuth.getInstance();
 
 
@@ -42,14 +52,14 @@ public class Register extends AppCompatActivity {
         btnRegis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String correo =  nEmail.getText().toString().trim();
-                String pass = nPass.getText().toString().trim();
+                String correo =  emailR.getText().toString().trim();
+                String pass = passR.getText().toString().trim();
                 if (TextUtils.isEmpty(correo)){
-                    nEmail.setError("Email es necesario");
+                    emailR.setError("Email es necesario");
                     return;
                 }
                 if (TextUtils.isEmpty(pass)){
-                    nPass.setError("Contraseña necesaria");
+                    passR.setError("Contraseña necesaria");
                     return;
                 }
                 fAuth.createUserWithEmailAndPassword(correo,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
