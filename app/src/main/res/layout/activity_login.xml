@@ -2,43 +2,154 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginC"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="146dp"
-        android:layout_height="69dp"
-        android:text="LOGIN"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="76dp" />
-
-    <EditText
-        android:id="@+id/correoUs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Correo"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="209dp" />
-
-    <EditText
-        android:id="@+id/passwordUs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Contraseña"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="310dp" />
 
     <Button
         android:id="@+id/btnSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:width="350sp"
+        android:height="50sp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="REGISTRARSE"
+        android:textSize="20sp"
+        app:cornerRadius="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.841" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="350sp"
+        android:height="50sp"
+        android:fontFamily="@font/quicksand_bold"
         android:text="INGRESAR"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="464dp" />
+        android:textSize="20sp"
+        app:cornerRadius="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <EditText
+        android:id="@+id/passLogin"
+        android:layout_width="357dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="364dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217" />
+
+    <EditText
+        android:id="@+id/usuarioLogin"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/passLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/usuarioLog"
+        app:layout_constraintVertical_bias="0.364" />
+
+    <TextView
+        android:id="@+id/usuarioLog"
+        android:layout_width="409dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="110dp"
+        android:fontFamily="@font/quicksand_light"
+        android:text="Ingresa tu nombre de usuario:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/passwordLogin"
+        android:layout_width="288dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="420dp"
+        android:fontFamily="@font/quicksand_light"
+        android:text="Ingresa tu contraseña:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <TextView
+        android:id="@+id/passwordLogin3"
+        android:layout_width="288dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="340dp"
+        android:fontFamily="@font/quicksand_light"
+        android:text="Recuperar contraseña"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/passwordLogin4"
+        android:layout_width="288dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="340dp"
+        android:fontFamily="@font/quicksand_light"
+        android:text="Recuperar contraseña"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/passwordLogin5"
+        android:layout_width="288dp"
+        android:layout_height="38dp"
+        android:fontFamily="@font/quicksand_light"
+        android:text="Recuperar contraseña"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="406dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
