@@ -52,8 +52,8 @@
         android:layout_height="39dp"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="172dp" />
+        tools:layout_editor_absoluteX="-81dp"
+        tools:layout_editor_absoluteY="194dp" />
 
     <EditText
         android:id="@+id/registryPass"
